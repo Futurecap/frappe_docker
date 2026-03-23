@@ -122,6 +122,8 @@ services:
     volumes:
       - sites:/home/frappe/frappe-bench/sites
       - logs:/home/frappe/frappe-bench/logs
+    ports:
+      - "3000:8081"
 
   queue-long:
     image: frappe/erpnext:v16.10.1
